@@ -32,9 +32,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     console.log("Generating token...");
     const token = generateToken(user.id);
+    const userId = user.id;
     console.log("Token generated:", token);
 
-    return res.status(200).json({ token });
+    return res.status(200).json({ token, userId });
 
   } catch (error: any) {
     console.error("Login error:", error);

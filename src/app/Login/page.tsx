@@ -19,6 +19,7 @@ export default function LoginPage() {
       localStorage.setItem("token", token);
       localStorage.setItem("userId", userId);
 
+      console.log("UID", userId);
       router.push("/Dashboard");
     } catch (err) {
       setError("Email atau password salah!");
