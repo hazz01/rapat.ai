@@ -9,7 +9,7 @@ export default function Home() {
       <Sidebar />
       <div className="flex flex-col flex-1 overflow-hidden">
         <Header />
-        <main className="flex-1 overflow-auto p-6 flex items-center justify-center">
+        <main className="flex-1 overflow-auto flex items-center justify-center">
           <MainContent />
         </main>
         <Footer />

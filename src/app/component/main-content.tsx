@@ -14,7 +14,7 @@ export function MainContent() {
   }
 
   return (
-    <div className="w-full max-w-3xl flex flex-col items-center gap-8">
+    <div className="w-full max-w-fit flex flex-col items-center gap-8">
       {isRecording ? (
         <ChatPage />
       ) : (
